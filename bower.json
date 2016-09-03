@@ -1,0 +1,22 @@
+{
+  "name": "merkinsio-pantallas-bootstrap",
+  "authors": [
+    "Daniel Sánchez <dansanav@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "UNLICENSED",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "font-awesome": "^4.6.3",
+    "bootstrap": "^3.3.7"
+  }
+}

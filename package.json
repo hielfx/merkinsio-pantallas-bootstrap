@@ -1,0 +1,15 @@
+{
+  "name": "merkinsio-pantallas-bootstrap",
+  "version": "1.0.0",
+  "description": "",
+  "main": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Daniel Sánchez <dansanav@gmail.com>",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-inject": "^4.1.0"
+  }
+}

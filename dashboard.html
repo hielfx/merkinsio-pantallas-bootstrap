@@ -3,10 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <title>Merkinsio Dashboard</title>
-    <!--Loading css-->
-    <link rel="stylesheet" type="text/css" href="./css/bootstrap-theme.min.css">
-    <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="./css/custom.css">
+
+    <!-- inject:css -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <!-- endinject -->
 </head>
 <body>
 
@@ -14,29 +16,51 @@
 <div class="container">
     <div class="well"><!--TODO: REMOVE WELL-->
         <div class="row">
-            <!--Search form-->
-            <div class="col-md-6 col-sm-6">
-                <form name="searchForm" class="search"><!--TODO: ADD ATTRIBUTES-->
-                    <div class="form-group-sm has-feedback left-icon">
-                        <!--<label class="control-label" for="inputSuccess2">Input with success</label>-->
-                        <input type="text" class="form-control" name="search_field" id="search_field"
-                               placeholder="Search">
-                        <span class="glyphicon glyphicon-search form-control-feedback left"></span>
-                        <span class="glyphicon glyphicon-remove-sign form-control-feedback"></span>
-                        <!--<span id="inputSuccess2Status" class="sr-only">(success)</span>-->
-                    </div>
-                </form>
+            <div class="col-md-12">
+                <!--Search form-->
+                <div class="col-md-6 col-sm-6">
+                    <form name="searchForm" class="search"><!--TODO: ADD ATTRIBUTES-->
+                        <div class="form-group-sm has-feedback left-icon">
+                            <!--<label class="control-label" for="inputSuccess2">Input with success</label>-->
+                            <input type="text" class="form-control" name="search_field" id="search_field"
+                                   placeholder="Search">
+                            <span class="glyphicon glyphicon-search form-control-feedback left"></span>
+                            <span class="glyphicon glyphicon-remove-sign form-control-feedback"></span>
+                            <!--<span id="inputSuccess2Status" class="sr-only">(success)</span>-->
+                        </div>
+                    </form>
+                </div>
+
+                <!--Add button-->
+                <div class="col-md-6 col-sm-6">
+                    <button type="button" class="btn btn-success btn-xs btn-padding pull-right">Añadir</button>
+                </div>
             </div>
 
-            <!--Add button-->
-            <div class="col-md-6 col-sm-6">
-                <button type="button" class="btn btn-success btn-xs btn-padding pull-right">Añadir</button>
+            <br/>
+            <!--Dashboard body-->
+            <div class="panel panel-default top-buffer">
+                <div class="panel-body">
+                    <!--<div class="col-md-6 col-sm-6">-->
+                    <div class="os-image">
+                        <img src="pics/android_apk_icon.png">
+                        <!--</div>-->
+                        <div id="project-name"><strong>2048-android</strong></div>
+                    </div>
+
+                    <div class="col-md-6 col-sm-6">
+
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 </div>
 
-<!--Loading scripts-->
-<script src="./js/bootstrap.min.js"></script>
+<!-- inject:js -->
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="js/npm.js"></script>
+<!-- endinject -->
 </body>
 </html>
