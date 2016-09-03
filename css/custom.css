@@ -21,7 +21,8 @@ input#search_field {
     left: 0 !important;
     padding-left: 5px;
 }
-/* ----- end -----*/
+
+/* ---------------------- */
 
 /* ----- Add button ----- */
 button.btn-padding {
@@ -30,29 +31,73 @@ button.btn-padding {
     margin-right: -15px;
 }
 
-/* ----- end -----*/
+/* ---------------------- */
 
 /* ----- Spacing ----- */
 .top-buffer {
     margin-top: 20px;
 }
 
-/* ----- end ----- */
+.right-buffer-minus {
+    /*margin-right: -30px;*/
+}
 
+/* ------------------- */
+
+/* ----- Panel ----- */
 .panel {
-    margin: 15px;
     margin: 15px;
 }
 
+div.panel-element {
+    /*display: inline;*/
+    /*margin-right: -15px;*/
+    margin-right: 10px;
+}
+
+/* ----------------- */
+
 /* ----- OS and name ----- */
-div.os-image div#project-name {
-    display: inline;
+span#project-name {
+    /*display: inline;*/
+    font-size: 20px;
+}
+div.os-image img {
+    max-height: 30px;
+    max-width: 30px;
+    margin-top: -5px; /*Moving up the image*/
+}
+
+/* ------------------------*/
+
+/* ----- Right side icons ----- */
+.right-side-icons {
     font-size: 20px;
 }
 
-div.os-image img {
-    margin-top: -5px;
-    max-height: 30px;
-    max-width: 30px;
+.right-side-icons div {
+    display: inline-block;
+    margin-left: 15px;
 }
-/* ----- end -----*/
+
+.right-side-icons div.cancel-icon span {
+    position: relative;
+    top: -15px;
+}
+
+span.bottom-icon {
+    font-size: 30px;
+}
+
+span.bottom-icon-hidden {
+    font-size: 30px;
+    visibility: hidden;
+}
+
+span.bottom-icon img {
+    /*margin-top: -5px;*/
+    max-height: 40px;
+    max-width: 40px;
+}
+
+/* --------------------------- */

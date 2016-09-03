@@ -14,8 +14,8 @@ gulp.task('dashboard', function (cb) {
 
         // CSS files
         'bower_components/bootstrap/dist/css/bootstrap.min.css',
-        'bower_components/bootstrap/dist/css/bootstrap.min.css',
         'bower_components/bootstrap/dist/css/bootstrap-theme.min.css',
+        'bower_components/font-awesome/css/font-awesome.min.css',
         'css/*.css'
 
     ], {read: false});
