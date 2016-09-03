@@ -1,0 +1,32 @@
+/* ----- Search bar ----- */
+form.search {
+    /* If we don't put this we can't resize the input
+     and the control-feedback at the same time*/
+    max-width: 300px;
+}
+
+input#search_field {
+    border-radius: 25px;
+    /*max-width: 300px;*/
+}
+
+.left-icon input {
+    /* The glyph-icon will fill this gap */
+    padding-left: 30px !important;
+}
+
+.left-icon span.left {
+    /* Pull the glyph-icon to the left */
+    left: 0 !important;
+    padding-left: 5px;
+}
+
+/* ----- end -----*/
+
+/* ----- Add button ----- */
+button.btn-padding {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+/* ----- end -----*/

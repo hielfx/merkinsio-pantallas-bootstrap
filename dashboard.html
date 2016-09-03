@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Merkinsio Dashboard</title>
+    <!--Loading css-->
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap-theme.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/custom.css">
+</head>
+<body>
+
+<!--Main div-->
+<div class="container">
+    <div class="well"><!--TODO: REMOVE WELL-->
+        <div class="row">
+            <!--Search form-->
+            <div class="col-md-6 col-sm-6">
+                <form name="searchForm" class="search"><!--TODO: ADD ATTRIBUTES-->
+                    <div class="form-group-sm has-feedback left-icon">
+                        <!--<label class="control-label" for="inputSuccess2">Input with success</label>-->
+                        <input type="text" class="form-control" name="search_field" id="search_field"
+                               placeholder="Search">
+                        <span class="glyphicon glyphicon-search form-control-feedback left"></span>
+                        <span class="glyphicon glyphicon-remove-sign form-control-feedback"></span>
+                        <!--<span id="inputSuccess2Status" class="sr-only">(success)</span>-->
+                    </div>
+                </form>
+            </div>
+
+            <!--Add button-->
+            <div class="col-md-6 col-sm-6">
+                <button type="button" class="btn btn-success btn-xs btn-padding pull-right">Añadir</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Loading scripts-->
+<script src="./js/bootstrap.min.js"></script>
+</body>
+</html>
