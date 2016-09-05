@@ -58,7 +58,7 @@ div.panel-element {
 /* ----------------- */
 
 /* ----- OS and name ----- */
-span#project-name {
+span.project-name {
     /*display: inline;*/
     font-size: 20px;
 }
@@ -99,5 +99,13 @@ span.bottom-icon img {
     max-height: 40px;
     max-width: 40px;
 }
-
 /* --------------------------- */
+
+span.attached img {
+    max-height: 20px;
+    max-width: 20px;
+}
+
+div.last-build {
+    margin-top: 15px;
+}
