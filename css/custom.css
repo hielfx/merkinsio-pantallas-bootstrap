@@ -92,6 +92,7 @@ span.bottom-icon {
 span.bottom-icon-hidden {
     font-size: 30px;
     visibility: hidden;
+    padding-left: 10px;
 }
 
 span.bottom-icon img {
@@ -101,11 +102,24 @@ span.bottom-icon img {
 }
 /* --------------------------- */
 
+/* ----- Attached icon -----*/
 span.attached img {
     max-height: 20px;
     max-width: 20px;
 }
 
+span.attached-none img {
+    /*It doesn't have attachment*/
+    max-height: 22.5px;
+    max-width: 22.5px;
+}
+
+/* -------------------------*/
+
+/* ----- Last build -----*/
 div.last-build {
+    /*Last build*/
     margin-top: 15px;
 }
+
+/* ----------------------*/
