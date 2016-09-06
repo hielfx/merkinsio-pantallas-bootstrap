@@ -183,13 +183,20 @@ div.last-build {
 /* ----- Navbar image ----- */
 .navbar-image {
     margin-top: 6px;
-    margin-left: 5px;
+    /*margin-left: 5px;*/
     /*background-color:green;*/
+    color: #777;
+    font-size: 20px;
 }
 
+.navbar-image:hover {
+    background-color: transparent;
+    color: black;
+}
 .navbar-image img {
     max-height: 40px;
     max-width: 40px;
+    background-color: transparent;
 }
 
 /* ------------------------ */
