@@ -169,15 +169,24 @@ div.last-build {
 .navbar-icons {
     background-color: transparent;
 }
-
 .navbar-icons span {
     font-size: 20px;
 }
-
 .navbar-right {
     margin-right: 0px;
 }
 
+div.navbar-header a.navbar-brand {
+    display: inline-block;
+    padding-top: 5px;
+    padding-bottom: 0;
+}
+
+div.navbar-header a.navbar-brand img {
+    max-height: 150px;
+    max-width: 150px;
+    position: relative;
+}
 /* ------------------ */
 
 /* ----- Navbar image ----- */
