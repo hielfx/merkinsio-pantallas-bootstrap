@@ -16,6 +16,7 @@ gulp.task('dashboard', function (cb) {
         'bower_components/bootstrap/dist/css/bootstrap.min.css',
         'bower_components/bootstrap/dist/css/bootstrap-theme.min.css',
         'bower_components/font-awesome/css/font-awesome.min.css',
+        'bower_components/hover/css/hover-min.css',
         'css/*.css'
 
     ], {read: false});

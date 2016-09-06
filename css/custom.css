@@ -49,8 +49,13 @@ button.btn-padding {
 /* ------------------- */
 
 /* ----- Panel ----- */
-.panel {
+.main-panel {
     margin: 15px;
+    display: block;
+}
+
+.main-panel:hover {
+    /*cursor:pointer;*/
 }
 
 div.panel-element {
@@ -63,6 +68,7 @@ div.panel-body-buffer-minus {
     padding-bottom: 0;
     margin-bottom: -2px; /*-2px to override the element defaul border*/
 }
+
 /* ----------------- */
 
 /* ----- OS and name ----- */
@@ -70,6 +76,7 @@ span.project-name {
     /*display: inline;*/
     font-size: 20px;
 }
+
 div.os-image img {
     max-height: 30px;
     max-width: 30px;
@@ -98,18 +105,20 @@ div.os-image img {
 /*}*/
 
 .bottom-icon-hidden {
-    background-image: url("../pics/transparent-image.png");
+    background-image: url("/pics/transparent-image.png");
     height: 20px;
     width: 30px;
     display: inline-block;
     /*backgrounsd-color: black;*/
     /*margin-top:5px;*/
 }
+
 span.bottom-icon img {
     /*margin-top: -5px;*/
     max-height: 30px;
     max-width: 30px;
 }
+
 /* --------------------------- */
 
 /* ----- Attached icon -----*/
@@ -155,3 +164,36 @@ div.last-build {
 }
 
 /* ------------------------ */
+
+/* ----- Navbar ----- */
+.navbar-icons {
+    background-color: transparent;
+}
+
+.navbar-icons span {
+    font-size: 20px;
+}
+
+.navbar-right {
+    margin-right: 0px;
+}
+
+/* ------------------ */
+
+/* ----- Navbar image ----- */
+.navbar-image {
+    margin-top: 6px;
+    margin-left: 5px;
+    /*background-color:green;*/
+}
+
+.navbar-image img {
+    max-height: 40px;
+    max-width: 40px;
+}
+
+/* ------------------------ */
+
+body {
+    padding-top: 70px;
+}

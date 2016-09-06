@@ -46,14 +46,14 @@ function resizeBuildStatus() {
 
         //Set the build-status height equals to the panel height
         $(status_element).height(panel_height);
-        console.log('resized');
+        // console.log('resized');
     });
 }
 
 $(function () {
-    $(window).resize(function () {
-        resizeBuildStatus();
-    });
+    // $(window).resize(function () {
+    //     resizeBuildStatus();
+    // });
     resizeBuildStatus();
 });
 $(window).resize(function () {
