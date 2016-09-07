@@ -1,0 +1,9 @@
+.col-center {
+    /*Centering the arrow*/
+    float: none;
+    margin: 0 auto;
+}
+
+.collapse-top-buffer {
+    margin-top: 20px;
+}

@@ -4,31 +4,31 @@
 
 $('.panel-body').click(function (e) {
     if (e.target === this) {
-        window.alert('Panel Body');
+        console.log('Panel Body');
     }
 });
 
 $('.users').click(function (e) {
     if (e.target === this) {
-        window.alert('Slack');
+        console.log('Slack');
     }
 });
 
 $('.repo').click(function (e) {
     if (e.target === this) {
-        window.alert('Bitbucket');
+        console.log('Bitbucket');
     }
 });
 
 $('.send').click(function (e) {
     if (e.target === this) {
-        window.alert('Applivery');
+        console.log('Applivery');
     }
 });
 
 $('.delete').click(function (e) {
     if (e.target === this) {
-        window.alert('Delete');
+        console.log('Delete');
     }
 });
 
