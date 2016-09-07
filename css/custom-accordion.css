@@ -40,5 +40,35 @@ div.build-number {
     height: inherit;
     padding-top: 20px;
 }
-
 /* -------------------------- */
+
+/* ----- Build attachments ----- */
+.build-attachments {
+    padding-left: 0px;
+    padding-top: 20px;
+}
+
+.build-attachments span {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.build-attachments span.glyphicon {
+    font-size: 20px;
+}
+
+.build-attachments span.fa {
+    font-size: 25px;
+}
+
+.build-attachments span.fa.mobile-icon {
+    font-size: 60px;
+    margin-bottom: -5px;
+}
+
+.build-attachments span.remove-icon {
+    padding-right: 3px;
+}
+
+/* ----------------------------- */
