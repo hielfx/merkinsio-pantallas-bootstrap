@@ -5,7 +5,8 @@ var gulp = require('gulp');
 var inject = require('gulp-inject');
 
 gulp.task('dashboard', function (cb) {
-    var target = gulp.src('dashboard.html');
+    var dashboard = gulp.src('dashboard.html');
+    var inside_project_builds = gulp.src('inside-project-builds.html');
     var sources = gulp.src([
         //JavaScript files
         'bower_components/jquery/dist/jquery.min.js',
@@ -21,9 +22,14 @@ gulp.task('dashboard', function (cb) {
 
     ], {read: false});
 
-    return target
-        .pipe(inject(sources, {addRootSlash: false}))
-        .pipe(gulp.dest('.'));
+    return [
+        dashboard
+            .pipe(inject(sources, {addRootSlash: false}))
+            .pipe(gulp.dest('.')),
+        inside_project_builds
+            .pipe(inject(sources, {addRootSlash: false}))
+            .pipe(gulp.dest('.'))
+    ];
 });
 
 gulp.task('default', ['dashboard']);
