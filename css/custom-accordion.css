@@ -2,6 +2,7 @@
     /*Centering the arrow*/
     float: none;
     margin: 0 auto;
+    font-size: 15px;
 }
 
 .collapse-top-buffer {
