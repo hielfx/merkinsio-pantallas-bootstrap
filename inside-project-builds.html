@@ -77,59 +77,82 @@
                     <div class="tab-content">
                         <!-- Build tab -->
                         <div class="tab-pane fade in active" id="build-tab">
+
                             <!-- Visible content -->
                             <div class="hvr-glow panel top-buffer main-panel">
                                 <div class="build-status build-status-ok pull-left">
                                     <img class="img-status" src="pics/transparent-image.png"/>
                                 </div>
-                                <div class="panel-default panel-body panel-body-buffer-minus">
-                                    <!--<div class="col-md-6 col-sm-6">-->
+                                <div class="panel-default panel-body panel-body-buffer-minus panel-body-buffer-top">
+
                                     <div class="panel-element">
-
-                                        <div class="os-image pull-left">
-                                            <img class="reformat-top" src="pics/android-icon.png">
-                                            <!--</div>-->
-                                            <span class="project-name"><strong>2048-android</strong></span>
-                                            <div class="last-build">
-                                                <span class="attached">
-                                                    <img src="pics/checkmark-icon.png"/>
-                                                    <strong>
-                                                        <!-- TODO: May change in the future -->
-                                                        24/08/16 15:25 Ultima construcción
-                                                    </strong>
-                                                </span>
+                                        <div class="col-md-4">
+                                            <!-- Build number -->
+                                            <div class="build-number ">
+                                                <strong>#<span class="build-number">4</span></strong>
+                                            </div>
+                                            <div class="os-image">
+                                                <div class="build-information">
+                                                    <span class="project-name"><strong>2048-android</strong></span>
+                                                    <div class="last-build">
+                                                        <span class="attached">
+                                                            <!--<img src="pics/checkmark-icon.png"/>-->
+                                                            <strong>
+                                                                <span class="build-version">
+                                                                    V 2.0
+                                                                </span>
+                                                            </strong>
+                                                            <br/>
+                                                            <strong>
+                                                                <!-- TODO: May change in the future -->
+                                                                <span class="build-date">24/08/16 15:25</span> Fecha construcción
+                                                            </strong>
+                                                        </span>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
 
-                                        <div class="pull-right right-side-icons text-center">
-
-                                            <div class="">
-                                                <span class="glyphicon glyphicon-folder-open"></span>
-                                                <br/>
-                                                <span class="bottom-icon"><img class="repo"
-                                                                               src="pics/bitbucket-icon-2.png"/></span>
-                                            </div>
-                                            <div class="">
-                                                <span class="fa fa-users"></span>
-                                                <br/>
-                                                <span class="bottom-icon"><img class="users" src="pics/slack-icon.png"/></span>
-                                            </div>
-                                            <div class="">
-                                                <span class="glyphicon glyphicon-send"></span>
-                                                <br/>
-                                                <span class="bottom-icon"><img class="send"
-                                                                               src="pics/applivery-icon.png"/></span>
-
-                                            </div>
-                                            <div class="">
-                                                <span class="glyphicon glyphicon-paperclip"></span>
-                                                <br/>
-                                                <span class="bottom-icon attached"><img src="pics/checkmark-icon.png"/></span>
-                                            </div>
-                                            <div class="cancel-icon">
-                                                <span class="glyphicon glyphicon-trash cancel-icon delete"></span>
-                                            </div>
+                                        <!-- Repository branches -->
+                                        <div class="col-md-4 build-branches text-center">
+                                            <h3><span class="label - label-default">master</span></h3>
                                         </div>
+
+                                        <!-- Build attachments -->
+                                        <div class="col-md-4 build-attachments">
+                                            a
+                                        </div>
+
+                                        <!-- Rightside icons -->
+                                        <!--<div class="pull-right right-side-icons text-center">-->
+
+                                        <!--<div class="">-->
+                                        <!--<span class="glyphicon glyphicon-folder-open"></span>-->
+                                        <!--<br/>-->
+                                        <!--<span class="bottom-icon"><img class="repo"-->
+                                        <!--src="pics/bitbucket-icon-2.png"/></span>-->
+                                        <!--</div>-->
+                                        <!--<div class="">-->
+                                        <!--<span class="fa fa-users"></span>-->
+                                        <!--<br/>-->
+                                        <!--<span class="bottom-icon"><img class="users" src="pics/slack-icon.png"/></span>-->
+                                        <!--</div>-->
+                                        <!--<div class="">-->
+                                        <!--<span class="glyphicon glyphicon-send"></span>-->
+                                        <!--<br/>-->
+                                        <!--<span class="bottom-icon"><img class="send"-->
+                                        <!--src="pics/applivery-icon.png"/></span>-->
+
+                                        <!--</div>-->
+                                        <!--<div class="">-->
+                                        <!--<span class="glyphicon glyphicon-paperclip"></span>-->
+                                        <!--<br/>-->
+                                        <!--<span class="bottom-icon attached"><img src="pics/checkmark-icon.png"/></span>-->
+                                        <!--</div>-->
+                                        <!--<div class="cancel-icon">-->
+                                        <!--<span class="glyphicon glyphicon-trash cancel-icon delete"></span>-->
+                                        <!--</div>-->
+                                        <!--</div>-->
 
                                         <!-- Accordion content -->
                                         <div class="col-md-12 col-sm-12 col-xs-12 col-lg-12 collapse collapse-top-buffer"
@@ -258,13 +281,13 @@
 
                                         <!-- Accordion footer -->
                                         <div class="col-md-12 col-xs-12 col-lg-12 col-sm-12">
-                                            <div class=" col-xs-1 col-sm-1 col-md-1 col-lg-1 col-center">
+                                            <div class=" col-xs-1 col-sm-1 col-md-1 col-lg-1  col-center text-center">
                                                 <!--<span class="toggle-message text-center">-->
                                                 <!--<strong>Detalles</strong>-->
                                                 <!--</span>-->
                                                 <a href="#build-tab-collapse" id="build-tab-toggle"
                                                    class="fa fa-chevron-circle-up fa-chevron-circle-down fa-1x"
-                                                   data-toggle="build-tab-collapse" data-placement="center"><i></i></a>
+                                                   data-toggle="build-tab-collapse"><i></i></a>
                                             </div>
                                         </div>
                                     </div>

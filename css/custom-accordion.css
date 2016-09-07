@@ -1,10 +1,44 @@
+/* ----- Accordion toggle ----- */
+#build-tab-toggle {
+    /*padding-left:20px;*/
+}
 .col-center {
     /*Centering the arrow*/
     float: none;
     margin: 0 auto;
     font-size: 15px;
 }
-
 .collapse-top-buffer {
     margin-top: 20px;
+    overflow-x: auto;
 }
+
+/* ---------------------------- */
+
+/* ----- Build information ----- */
+.build-information {
+    padding-left: 10px;
+}
+
+/* ----------------------------- */
+
+/* ----- Build number ----- */
+div.build-number {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.panel-body-buffer-top {
+    padding-top: 0;
+}
+
+/* ------------------------ */
+
+/* ----- Build branches ----- */
+.build-branches {
+    height: inherit;
+    padding-top: 20px;
+}
+
+/* -------------------------- */

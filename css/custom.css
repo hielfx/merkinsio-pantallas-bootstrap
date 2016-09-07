@@ -156,13 +156,17 @@ div.last-build {
 }
 
 .build-status img {
-    height: 90px;
+    /* It will resize on ready */
+    height: 0px;
 }
 
 .build-status-ok {
     background-color: #419641;
 }
 
+.build-status-error {
+    background-color: #b92c28;
+}
 /* ------------------------ */
 
 /* ----- Navbar ----- */
