@@ -26,6 +26,8 @@ $('#settings-modal').on('show.bs.modal', function (event) {
             break;
         case 'modal-toggle-github':
             $('#modal-title').html('Configuración de GitHub');
+            $('#modal-form-github').addClass('modal-form-active');
+            $('#modal-form-github').removeClass('modal-form-disabled');
             break;
         case 'modal-toggle-gitlab':
             $('#modal-title').html('Configuración de GitLab');
