@@ -2,6 +2,7 @@
 #build-tab-toggle {
     /*padding-left:20px;*/
 }
+
 .col-center {
     /*Centering the arrow*/
     float: none;
@@ -9,6 +10,7 @@
     font-size: 15px;
     padding-bottom: 5px;
 }
+
 .collapse-top-buffer {
     margin-top: 20px;
     overflow-x: auto;
@@ -41,6 +43,7 @@ div.build-number {
     height: inherit;
     padding-top: 20px;
 }
+
 /* -------------------------- */
 
 /* ----- Build attachments ----- */
@@ -48,24 +51,30 @@ div.build-number {
     padding-left: 0px;
     padding-top: 20px;
 }
+
 .build-attachments span {
     margin-top: 5px;
     margin-bottom: 5px;
     cursor: pointer;
 }
+
 .build-attachments span.glyphicon {
     font-size: 20px;
 }
+
 .build-attachments span.fa {
     font-size: 25px;
 }
+
 .build-attachments span.fa.mobile-icon {
     font-size: 60px;
     margin-bottom: -5px;
 }
+
 .build-attachments span.remove-icon {
     padding-right: 3px;
 }
+
 /* ----------------------------- */
 
 /* ----- Build header ----- */
@@ -78,3 +87,55 @@ div.build-number {
 div.panel-body.well {
     border-radius: 0;
 }
+
+/* ----- Settings tab ----- */
+fieldset {
+    border: 1px solid #ddd !important;
+    margin: 0;
+    xmin-width: 0;
+    padding: 10px;
+    position: relative;
+    border-radius: 4px;
+    background-color: #f5f5f5;
+    padding-left: 10px !important;
+}
+
+legend {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 0px;
+    width: auto;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px 10px 5px 10px;
+    background-color: #ffffff;
+}
+
+fieldset img {
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+}
+
+div.git-settings fieldset {
+    width: auto;
+}
+
+fieldset span.disabled {
+    opacity: 0.4;
+    filter: alpha(opacity=40); /* msie */
+}
+
+fieldset span.disabled img {
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+span.github-icon img {
+    height: 50px;
+    width: 50px;
+}
+
+/* ------------------------ */
