@@ -151,5 +151,11 @@ fieldset span img:hover {
 .modal-form-disabled {
     display: none;
 }
-
 /* -----------------------------*/
+
+/* ----- Modal textarea ----- */
+div.modal textarea {
+    resize: vertical;
+}
+
+/* -------------------------- */

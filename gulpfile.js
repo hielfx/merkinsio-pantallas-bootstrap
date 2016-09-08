@@ -11,12 +11,14 @@ gulp.task('dashboard', function (cb) {
         //JavaScript files
         'bower_components/jquery/dist/jquery.min.js',
         'bower_components/bootstrap/dist/js/bootstrap.min.js',
+        'bower_components/bootstrap-switch/dist/js/bootstrap-switch.min.js',
         'js/*.js',
 
         // CSS files
         'bower_components/bootstrap/dist/css/bootstrap.min.css',
         'bower_components/bootstrap/dist/css/bootstrap-theme.min.css',
         'bower_components/font-awesome/css/font-awesome.min.css',
+        'bower_components/bootstrap-switch/dist/css/bootstrap3/bootstrap-switch.min.css',
         'bower_components/hover/css/hover-min.css',
         'css/*.css'
 

@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="bower_components/bootstrap-switch/dist/css/bootstrap3/bootstrap-switch.min.css">
     <link rel="stylesheet" href="bower_components/hover/css/hover-min.css">
     <link rel="stylesheet" href="css/accordion-panel.css">
     <link rel="stylesheet" href="css/custom-accordion.css">
@@ -2127,13 +2128,13 @@
                             <td>phidalgo@merkinsio.com</td>
                             <td>2048dev</td>
                             <td>desarrollador</td>
-                            <td><span class="glyphicon glyphicon-ban-circle"></span></td>
+                            <td><a href=""><span class="glyphicon glyphicon-ban-circle"></span></a></td>
                         </tr>
                         <tr>
                             <td>malucena@merkinsio.com</td>
                             <td>2048cli</td>
                             <td>cliente</td>
-                            <td><span class="glyphicon glyphicon-ban-circle"></span></td>
+                            <td><a href=""><span class="glyphicon glyphicon-ban-circle"></span></a></td>
                         </tr>
                         </tbody>
                     </table>
@@ -2152,9 +2153,89 @@
                             <textarea class="form-control" id="github-rsa-key"></textarea>
                         </div>
                         <div>
-                            <!-- TODO: WEBHOOK -->
+                            <label for="github-webhook-verification">Verificar conexión</label>
+                            <a class="btn btn-success" id="github-webhook-verification">verificar</a>
+                            <span class=""><!-- TODO: ADD VERIFICATION --></span>
                         </div>
+                        <br/>
+                        <div>
+                            <!-- TODO: WEBHOOK -->
+                            <label for="github-webhook-checkbox">Webhook</label>
+                            <input type="checkbox" data-size="mini" data-on-text="On" data-off-text="Off"
+                                   id="github-webhook-checkbox" name="github-webhook-checkbox"/>
+                            <div class="collapse" id="github-webhook-collapse-form">
+                                <input type="text" class="form-control"
+                                       placeholder="http://example.com/webhooks?appIdD=APP_ID"/>
+                            </div>
+                        </div>
+                        <br/>
                         <button type="button" class="btn btn-primary" id="github-submit-btn">Guardar</button>
+                    </form>
+                </div>
+
+                <!-- Bitbucket -->
+                <div id="modal-form-bitbucket" class="form-group modal-form-disabled">
+                    <form id="bitbucket-form" action="" method="">
+                        <div class="form-group">
+                            <label for="bitbucket-ssh-key">SSH Key</label>
+                            <input type="text" class="form-control" id="bitbucket-ssh-key"
+                                   placeholder="git@sample.com:username/repository.git">
+                        </div>
+                        <div class="form-group">
+                            <label for="bitbucket-rsa-key">RSA Key</label>
+                            <textarea class="form-control" id="bitbucket-rsa-key"></textarea>
+                        </div>
+                        <div>
+                            <label for="bitbucket-webhook-verification">Verificar conexión</label>
+                            <a class="btn btn-success" id="bitbucket-webhook-verification">verificar</a>
+                            <span class=""><!-- TODO: ADD VERIFICATION --></span>
+                        </div>
+                        <br/>
+                        <div>
+                            <!-- TODO: WEBHOOK -->
+                            <label for="bitbucket-webhook-checkbox">Webhook</label>
+                            <input type="checkbox" data-size="mini" data-on-text="On" data-off-text="Off"
+                                   id="bitbucket-webhook-checkbox" name="bitbucket-webhook-checkbox"/>
+                            <div class="collapse" id="bitbucket-webhook-collapse-form">
+                                <input type="text" class="form-control"
+                                       placeholder="http://example.com/webhooks?appIdD=APP_ID"/>
+                            </div>
+                        </div>
+                        <br/>
+                        <button type="button" class="btn btn-primary" id="bitbucket-submit-btn">Guardar</button>
+                    </form>
+                </div>
+
+                <!-- GitLab -->
+                <div id="modal-form-gitlab" class="form-group modal-form-disabled">
+                    <form id="gitlab-form" action="" method="">
+                        <div class="form-group">
+                            <label for="gitlab-ssh-key">SSH Key</label>
+                            <input type="text" class="form-control" id="gitlab-ssh-key"
+                                   placeholder="git@sample.com:username/repository.git">
+                        </div>
+                        <div class="form-group">
+                            <label for="gitlab-rsa-key">RSA Key</label>
+                            <textarea class="form-control" id="gitlab-rsa-key"></textarea>
+                        </div>
+                        <div>
+                            <label for="gitlab-webhook-verification">Verificar conexión</label>
+                            <a class="btn btn-success" id="gitlab-webhook-verification">verificar</a>
+                            <span class=""><!-- TODO: ADD VERIFICATION --></span>
+                        </div>
+                        <br/>
+                        <div>
+                            <!-- TODO: WEBHOOK -->
+                            <label for="gitlab-webhook-checkbox">Webhook</label>
+                            <input type="checkbox" data-size="mini" data-on-text="On" data-off-text="Off"
+                                   id="gitlab-webhook-checkbox" name="gitlab-webhook-checkbox"/>
+                            <div class="collapse" id="webhook-collapse-form">
+                                <input type="text" class="form-control"
+                                       placeholder="http://example.com/webhooks?appIdD=APP_ID"/>
+                            </div>
+                        </div>
+                        <br/>
+                        <button type="button" class="btn btn-primary" id="gitlab-submit-btn">Guardar</button>
                     </form>
                 </div>
 
@@ -2171,6 +2252,7 @@
 <!-- inject:js -->
 <script src="bower_components/jquery/dist/jquery.min.js"></script>
 <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="bower_components/bootstrap-switch/dist/js/bootstrap-switch.min.js"></script>
 <script src="js/accordion-panel.js"></script>
 <script src="js/accordion-settings-modal.js"></script>
 <script src="js/custom.js"></script>

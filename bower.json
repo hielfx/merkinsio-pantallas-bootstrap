@@ -18,6 +18,7 @@
   "dependencies": {
     "font-awesome": "^4.6.3",
     "bootstrap": "^3.3.7",
-    "hover": "Hover#^2.0.2"
+    "hover": "Hover#^2.0.2",
+    "bootstrap-switch": "git+https://github.com/hielfx/bootstrap-switch.git"
   }
 }

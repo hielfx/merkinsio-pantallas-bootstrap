@@ -11,6 +11,9 @@ $(function () {
     //         }
     //     });
     // });
+    $("[name='github-webhook-checkbox']").bootstrapSwitch();
+    $("[name='gitlab-webhook-checkbox']").bootstrapSwitch();
+    $("[name='bitbucket-webhook-checkbox']").bootstrapSwitch();
 });
 
 $('#settings-modal').on('show.bs.modal', function (event) {
@@ -23,6 +26,8 @@ $('#settings-modal').on('show.bs.modal', function (event) {
         /* ----- Git ----- */
         case 'modal-toggle-bitbucket':
             $('#modal-title').html('Configuración de Bitbucket');
+            $('#modal-form-bitbucket').addClass('modal-form-active');
+            $('#modal-form-bitbucket').removeClass('modal-form-disabled');
             break;
         case 'modal-toggle-github':
             $('#modal-title').html('Configuración de GitHub');
@@ -31,6 +36,8 @@ $('#settings-modal').on('show.bs.modal', function (event) {
             break;
         case 'modal-toggle-gitlab':
             $('#modal-title').html('Configuración de GitLab');
+            $('#modal-form-gitlab').addClass('modal-form-active');
+            $('#modal-form-gitlab').removeClass('modal-form-disabled');
             break;
         /* --------------- */
 
@@ -98,4 +105,27 @@ $('#settings-modal').on('hide.bs.modal', function (event) {
         $(element).removeClass('modal-form-active');
         $(element).addClass('modal-form-disabled');
     });
+});
+
+//Webhook switch
+$('input[name="github-webhook-checkbox"]').on('switchChange.bootstrapSwitch', function (event, state) {
+    if (state) {
+        $('#github-webhook-collapse-form').collapse('show');
+    } else {
+        $('#github-webhook-collapse-form').collapse('hide');
+    }
+});
+$('input[name="bitbucket-webhook-checkbox"]').on('switchChange.bootstrapSwitch', function (event, state) {
+    if (state) {
+        $('#bitbucket-webhook-collapse-form').collapse('show');
+    } else {
+        $('#bitbucket-webhook-collapse-form').collapse('hide');
+    }
+});
+$('input[name="gitlab-webhook-checkbox"]').on('switchChange.bootstrapSwitch', function (event, state) {
+    if (state) {
+        $('#gitlab-webhook-collapse-form').collapse('show');
+    } else {
+        $('#gitlab-webhook-collapse-form').collapse('hide');
+    }
 });
