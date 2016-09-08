@@ -35,16 +35,23 @@ $('#settings-modal').on('show.bs.modal', function (event) {
         /* ----- Communication ----- */
         case 'modal-toggle-slack':
             $('#modal-title').html('Configuración de Slack');
+            $('#modal-form-slack').addClass('modal-form-active');
+            $('#modal-form-slack').removeClass('modal-form-disabled');
             break;
         // case 'modal-toggle-jira':
         //     break;
         // case 'modal-toggle-trello':
+        //     ('#modal-title').html('Configuración de Trello');
+        //     $('#modal-form-trello').addClass('modal-form-active');
+        //     $('#modal-form-trello').removeClass('modal-form-disabled');
         //     break;
         /* ------------------------- */
 
         /* ----- Distribution ----- */
         case 'modal-toggle-applivery':
             $('#modal-title').html('Configuración de Applivery');
+            $('#modal-form-applivery').addClass('modal-form-active');
+            $('#modal-form-applivery').removeClass('modal-form-disabled');
             break;
         case 'modal-toggle-crashlytics':
             $('#modal-title').html('Configuración de Crashlytics');
@@ -53,11 +60,15 @@ $('#settings-modal').on('show.bs.modal', function (event) {
             break;
         case 'modal-toggle-testfairy':
             $('#modal-title').html('Configuración de TestFairy');
+            $('#modal-form-testfairy').addClass('modal-form-active');
+            $('#modal-form-testfairy').removeClass('modal-form-disabled');
             break;
         // case 'modal-toggle-hockeyapp':
         //     break;
         case 'modal-toggle-mail':
             $('#modal-title').html('Configuración de Correo');
+            $('#modal-form-mail').addClass('modal-form-active');
+            $('#modal-form-mail').removeClass('modal-form-disabled');
             break;
         /* ------------------------- */
 

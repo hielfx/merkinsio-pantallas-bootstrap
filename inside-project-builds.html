@@ -83,10 +83,9 @@
                                         class=" glyphicon glyphicon-play"></span> Run</strong></button>
                                 <div class="col-md-5 col-sm-5 col-xs-5 col-lg-5 col-center">
                                     <select class="form-control">
-                                        <option>Filtro 1</option>
-                                        <option>Filtro 2</option>
-                                        <option>Filtro 3</option>
-                                        <option>Filtro 4</option>
+                                        <option>Distribución a tester</option>
+                                        <option>Publicado en markets</option>
+                                        <option>Compilaciones OK</option>
                                     </select>
                                 </div>
                             </div>
@@ -2039,6 +2038,126 @@
                         <button type="button" class="btn btn-primary" id="modal-form-submit-btn">Guardar</button>
                     </form>
                 </div>
+
+                <!-- Testfairy -->
+                <div id="modal-form-testfairy" class="form-group modal-form-disabled">
+                    <form id="testfairy-form" action="" method="">
+                        <div class="form-group">
+                            <label for="crashlytics-api-key">API Key</label>
+                            <input type="text" class="form-control" id="testfairy-api-key">
+                        </div>
+                        <div class="form-group">
+                            <label for="testfairy-tester-group">Grupo de tester</label>
+                            <input type="text" class="form-control" id="testfairy-tester-group">
+                        </div>
+                        <button type="button" class="btn btn-primary" id="testfairy-submit-btn">Guardar</button>
+                    </form>
+                </div>
+
+                <!-- Applivery -->
+                <div id="modal-form-applivery" class="form-group modal-form-disabled">
+                    <form id="applivery-form" action="" method="">
+                        <div class="form-group">
+                            <label for="applivery-api-key">API Key</label>
+                            <input type="text" class="form-control" id="applivery-api-key">
+                        </div>
+                        <div class="form-group">
+                            <label for="applivery-app-id">APP ID</label>
+                            <input type="text" class="form-control" id="applivery-app-id">
+                        </div>
+                        <button type="button" class="btn btn-primary" id="applivery-submit-btn">Guardar</button>
+                    </form>
+                </div>
+
+                <!-- Slack -->
+                <div id="modal-form-slack" class="form-group modal-form-disabled">
+                    <form id="slack-form" action="" method="">
+                        <div class="form-group">
+                            <label for="slack_texto_1">SLACK_TEXTO_1</label>
+                            <input type="text" class="form-control" id="slack_texto_1" placeholder="CÁMBIAME">
+                        </div>
+                        <div class="form-group">
+                            <label for="slack_texto_2">SLACK_TEXTO_2</label>
+                            <input type="text" class="form-control" id="slack_texto_2" placeholder="CÁMBIAME">
+                        </div>
+                        <button type="button" class="btn btn-primary" id="slack-submit-btn">Guardar</button>
+                    </form>
+                </div>
+
+                <!-- Mail -->
+                <div id="modal-form-mail" class="form-group modal-form-disabled">
+                    <button class="btn btn-success" data-toggle="collapse" data-target="#mail-collapse-form">
+                        <span><span class="glyphicon glyphicon-plus-sign"></span> Añadir</span>
+                    </button>
+                    <div class="collapse" id="mail-collapse-form">
+                        <hr/>
+                        <form id="mail-form" action="" method="">
+                            <div class="form-group">
+                                <label for="mail-email">Email</label>
+                                <input type="text" class="form-control" id="mail-email">
+                            </div>
+                            <div class="form-group">
+                                <label for="mail-group">Grupo</label>
+                                <input type="text" class="form-control" id="mail-group">
+                            </div>
+                            <div class="form-group">
+                                <label for="mail-type">Tipo</label>
+                                <select class="form-control" id="mail-type">
+                                    <option>Desarrollador</option>
+                                    <option>Cliente</option>
+                                    <option>Tester</option>
+                                </select>
+                            </div>
+                            <button type="button" class="btn btn-primary" id="mail-submit-btn">Guardar</button>
+                        </form>
+                        <hr/>
+                    </div>
+                    <table class="table table-condensed">
+                        <thead>
+                        <tr>
+                            <th>Mail</th>
+                            <th>Grupo</th>
+                            <th>Tipo</th>
+                            <th></th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <!-- TODO: GENERATE ROWS PROGRAMATICALY -->
+                        <tr>
+                            <td>phidalgo@merkinsio.com</td>
+                            <td>2048dev</td>
+                            <td>desarrollador</td>
+                            <td><span class="glyphicon glyphicon-ban-circle"></span></td>
+                        </tr>
+                        <tr>
+                            <td>malucena@merkinsio.com</td>
+                            <td>2048cli</td>
+                            <td>cliente</td>
+                            <td><span class="glyphicon glyphicon-ban-circle"></span></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- GitHub -->
+                <div id="modal-form-github" class="form-group modal-form-disabled">
+                    <form id="github-form" action="" method="">
+                        <div class="form-group">
+                            <label for="github-ssh-key">SSH Key</label>
+                            <input type="text" class="form-control" id="github-ssh-key"
+                                   placeholder="git@sample.com:username/repository.git">
+                        </div>
+                        <div class="form-group">
+                            <label for="github-rsa-key">RSA Key</label>
+                            <textarea class="form-control" id="github-rsa-key"></textarea>
+                        </div>
+                        <div>
+                            <!-- TODO: WEBHOOK -->
+                        </div>
+                        <button type="button" class="btn btn-primary" id="github-submit-btn">Guardar</button>
+                    </form>
+                </div>
+
             </div>
 
             <!-- Modal footer -->
