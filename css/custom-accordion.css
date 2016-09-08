@@ -157,5 +157,11 @@ fieldset span img:hover {
 div.modal textarea {
     resize: vertical;
 }
-
 /* -------------------------- */
+
+/* ----- Modal input file ----- */
+div.form-group input {
+    padding-bottom: 20px;
+}
+
+/* ---------------------------- */

@@ -18,6 +18,14 @@
 </head>
 <body>
 
+<!-- Breadcrums -->
+<div class="col-md-12">
+    <ol class="breadcrumb">
+        <li><a href="#Dashboard">Dashboard</a></li>
+        <li><a href="#">2048-Android</a></li>
+    </ol>
+</div>
+
 <!-- Header -->
 <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container-fluid">
@@ -1996,7 +2004,86 @@
                         </div>
 
                         <!-- Sign tab -->
-                        <div class="tab-pane fade" id="sign-tab">Sign</div>
+                        <div class="tab-pane fade" id="sign-tab">
+                            <div class="form-group">
+                                <button class="btn btn-success" data-toggle="collapse"
+                                        data-target="#sign-collapse-form">
+                                    <span><span class="glyphicon glyphicon-plus-sign"></span> Añadir</span>
+                                </button>
+                                <div class="collapse" id="sign-collapse-form">
+                                    <hr/>
+                                    <form id="sign-form" action="" method="">
+                                        <div class="col-md-6">
+                                            <fieldset>
+                                                <legend>Keystore</legend>
+                                                <div class="form-group">
+                                                    <label for="sign-keystore">Subir keystore</label>
+                                                    <label class="btn btn-default btn-file">
+                                                        Subir <input type="file" id="sign-keystore"
+                                                                     style="display: none;">
+                                                    </label>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="sign-keystore-password">Keystore password</label>
+                                                    <input type="password" class="form-control"
+                                                           id="sign-keystore-password">
+                                                </div>
+                                            </fieldset>
+                                        </div>
+
+                                        <div class="col-md-6">
+                                            <fieldset>
+                                                <legend>Alias</legend>
+                                                <div class="form-group">
+                                                    <label for="sign-alias">Alias</label>
+                                                    <input type="text" class="form-control" id="sign-alias">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="sign-alias-password">Alias password</label>
+                                                    <input type="password" class="form-control"
+                                                           id="sign-alias-password">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="sign-type">Tipo</label>
+                                                    <select id="sign-type" class="">
+                                                        <option>Tester</option>
+                                                        <option>Producción</option>
+                                                    </select>
+                                                </div>
+                                            </fieldset>
+                                        </div>
+                                        <button type="button" class="btn btn-primary" id="sign-submit-btn">Guardar
+                                        </button>
+                                    </form>
+                                    <hr/>
+                                </div>
+                                <table class="table table-condensed">
+                                    <thead>
+                                    <tr>
+                                        <th>Mail</th>
+                                        <th>Grupo</th>
+                                        <th>Tipo</th>
+                                        <th></th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <!-- TODO: GENERATE ROWS PROGRAMATICALY -->
+                                    <tr>
+                                        <td>phidalgo@merkinsio.com</td>
+                                        <td>2048dev</td>
+                                        <td>desarrollador</td>
+                                        <td><a href=""><span class="glyphicon glyphicon-ban-circle"></span></a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>malucena@merkinsio.com</td>
+                                        <td>2048cli</td>
+                                        <td>cliente</td>
+                                        <td><a href=""><span class="glyphicon glyphicon-ban-circle"></span></a></td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
