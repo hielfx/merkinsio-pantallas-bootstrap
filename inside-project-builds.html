@@ -1870,62 +1870,127 @@
 
                         <!-- Settings tab -->
                         <div class="tab-pane fade" id="settings-tab">
-                            <div class="form-group col-md-4 col-sm-4 col-lg-4 col-xs-4 git-settings">
+                            <div class="form-group col-md-3 col-sm-3 col-lg-3 col-xs-3 git-settings">
                                 <fieldset class="">
                                     <legend>Git</legend>
-                                    <span class="disabled">
-                                        <img src="pics/bitbucket-icon-2.png"/>
-                                    </span>
 
-                                    <span class="disabled github-icon">
-                                        <img src="pics/github-icon.png"/>
-                                    </span>
+                                    <a id="modal-toggle-bitbucket" href="#settings-modal" data-toggle="modal"
+                                       data-target="#settings-modal">
+                                        <span class="disabled">
+                                            <img src="pics/bitbucket-icon-2.png" class="hvr-grow"/>
+                                        </span>
+                                    </a>
 
-                                    <span class="gitlab-icon">
-                                        <img src="pics/gitlab-icon-name.png"/>
-                                    </span>
+                                    <a id="modal-toggle-github" href="#settings-modal" data-toggle="modal"
+                                       data-target="#settings-modal">
+                                        <span class="disabled github-icon">
+                                            <img src="pics/github-icon.png" class="hvr-grow"/>
+                                        </span>
+                                    </a>
+
+                                    <a id="modal-toggle-gitlab" href="#settings-modal" data-toggle="modal"
+                                       data-target="#settings-modal">
+                                        <span class="gitlab-icon">
+                                            <img src="pics/gitlab-icon-name.png" class="hvr-grow"/>
+                                        </span>
+                                    </a>
+
                                 </fieldset>
                             </div>
 
-                            <div class="form-group col-md-4 col-sm-4 col-lg-4 col-xs-4 communication-settings">
+                            <div class="form-group col-md-3 col-sm-3 col-lg-3 col-xs-3 communication-settings">
                                 <fieldset class="">
                                     <legend>Comunicación</legend>
-                                    <span class="disabled">
-                                        <img src="pics/slack-icon.png"/>
-                                    </span>
 
-                                    <span class="disabled">
-                                        <img src="pics/jira-icon.png"/>
-                                    </span>
+                                    <a id="modal-toggle-slack" href="#settings-modal" data-toggle="modal"
+                                       data-target="#settings-modal">
+                                        <span class="disabled">
+                                            <img src="pics/slack-icon.png" class="hvr-grow"/>
+                                        </span>
+                                    </a>
 
-                                    <span>
-                                        <img src="pics/trello-icon.png"/>
-                                    </span>
+                                    <a id="modal-toggle-jira" href="#settings-modal" data-toggle="modal"
+                                       data-target="#settings-modal">
+                                        <span class="disabled">
+                                            <img src="pics/jira-icon.png" class="hvr-grow"/>
+                                        </span>
+                                    </a>
 
-                                    <span class="disabled">
-                                        <img src="pics/apptize-icon.png"/>
-                                    </span>
+                                    <a id="modal-toggle-trello" href="#settings-modal" data-toggle="modal"
+                                       data-target="#settings-modal">
+                                        <span>
+                                            <img src="pics/trello-icon.png" class="hvr-grow"/>
+                                        </span>
+                                    </a>
+
                                 </fieldset>
                             </div>
 
-                            <div class="form-group col-md-4 col-sm-4 col-lg-4 col-xs-4 distribution-settings">
-                                <fieldset class="">
+                            <div class="form-group col-md-3 col-sm-3 col-lg-3 col-xs-3 distribution-settings">
+                                <fieldset>
                                     <legend>Distribución</legend>
-                                    <span class="disabled">
-                                        <img src="pics/applivery-icon.png"/>
-                                    </span>
 
-                                    <span class="disabled">
-                                        <img src="pics/crashlytics-icon.png"/>
-                                    </span>
+                                    <a id="modal-toggle-applivery" href="#settings-modal" data-toggle="modal"
+                                       data-target="#settings-modal">
+                                        <span class="disabled">
+                                            <img src="pics/applivery-icon.png" class="hvr-grow"/>
+                                        </span>
+                                    </a>
 
-                                    <span class="disabled">
-                                        <img src="pics/testfairy-icon.png"/>
-                                    </span>
+                                    <a id="modal-toggle-crashlytics" href="#settings-modal" data-toggle="modal"
+                                       data-target="#settings-modal">
+                                        <span class="disabled">
+                                            <img src="pics/crashlytics-icon.png" class="hvr-grow"/>
+                                        </span>
+                                    </a>
 
-                                    <span>
-                                        <img src="pics/hockeyapp-icon.png"/>
-                                    </span>
+                                    <a id="modal-toggle-testfairy" href="#settings-modal" data-toggle="modal"
+                                       data-target="#settings-modal">
+                                        <span class="disabled">
+                                            <img src="pics/testfairy-icon.png" class="hvr-grow"/>
+                                        </span>
+                                    </a>
+
+                                    <a id="modal-toggle-hockeyapp" href="#settings-modal" data-toggle="modal"
+                                       data-target="#settings-modal">
+                                        <span>
+                                            <img src="pics/hockeyapp-icon.png" class="hvr-grow"/>
+                                        </span>
+                                    </a>
+
+                                    <a id="modal-toggle-mail" href="#settings-modal" data-toggle="modal"
+                                       data-target="#settings-modal">
+                                        <span>
+                                            <img src="pics/mail-icon.png" class="hvr-grow"/>
+                                        </span>
+                                    </a>
+                                </fieldset>
+                            </div>
+
+                            <div class="form-group col-md-3 col-sm-3 col-lg-3 col-xs-3 test-settings">
+                                <fieldset class="">
+                                    <legend>Test</legend>
+
+                                    <a id="modal-toggle-apptize" href="#settings-modal" data-toggle="modal"
+                                       data-target="#settings-modal">
+                                        <span class="">
+                                            <img src="pics/apptize-icon.png" class="hvr-grow"/>
+                                        </span>
+                                    </a>
+
+                                    <a id="modal-toggle-aws-mobile" href="#settings-modal" data-toggle="modal"
+                                       data-target="#settings-modal">
+                                        <span class="disabled">
+                                            <img src="pics/aws-mobile-hub-icon.png" class="hvr-grow"/>
+                                        </span>
+                                    </a>
+
+                                    <a id="modal-toggle-appium" href="#settings-modal" data-toggle="modal"
+                                       data-target="#settings-modal">
+                                        <span class="disabled">
+                                            <img src="pics/appium-icon.png" class="hvr-grow"/>
+                                        </span>
+                                    </a>
                                 </fieldset>
                             </div>
                         </div>
@@ -1941,10 +2006,54 @@
 </div>
 <!--</div>-->
 
+<!-- Modals -->
+<div class="modal fade" id="settings-modal" tabindex="-1" role="dialog" aria-labelledby="settings-modal">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+
+            <!-- Modal header -->
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="modal-title"></h4>
+            </div>
+
+            <!-- Modal content -->
+            <div class="modal-body">
+                <!-- TODO: WE SHOULD INJECT THE VIEWS -->
+                <!-- Crashlytics -->
+                <div id="modal-form-crashlytics" class="form-group modal-form-disabled">
+                    <form id="crashlytics-form" action="" method="">
+                        <div class="form-group">
+                            <label for="crashlytics-api-key">API Key</label>
+                            <input type="text" class="form-control" id="crashlytics-api-key">
+                        </div>
+                        <div class="form-group">
+                            <label for="crashlytics-token">Token</label>
+                            <input type="text" class="form-control" id="crashlytics-token">
+                        </div>
+                        <div class="form-group">
+                            <label for="crashlytics-tester-group">Grupo de tester</label>
+                            <input type="text" class="form-control" id="crashlytics-tester-group">
+                        </div>
+                        <button type="button" class="btn btn-primary" id="modal-form-submit-btn">Guardar</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Modal footer -->
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
 <!-- inject:js -->
 <script src="bower_components/jquery/dist/jquery.min.js"></script>
 <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="js/accordion-panel.js"></script>
+<script src="js/accordion-settings-modal.js"></script>
 <script src="js/custom.js"></script>
 <script src="js/npm.js"></script>
 <!-- endinject -->

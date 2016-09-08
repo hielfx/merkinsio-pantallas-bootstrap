@@ -133,9 +133,23 @@ fieldset span.disabled img {
     filter: grayscale(100%);
 }
 
-span.github-icon img {
-    height: 50px;
-    width: 50px;
+/*span.github-icon img {*/
+/*height: 50px;*/
+/*width: 50px;*/
+/*}*/
+
+fieldset span img:hover {
+    cursor: pointer;
+}
+/* ------------------------ */
+
+/* ----- Modal form status-----*/
+.modal-form-active {
+    display: block;
 }
 
-/* ------------------------ */
+.modal-form-disabled {
+    display: none;
+}
+
+/* -----------------------------*/
