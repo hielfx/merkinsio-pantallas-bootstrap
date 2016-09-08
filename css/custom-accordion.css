@@ -68,6 +68,13 @@ div.build-number {
 }
 /* ----------------------------- */
 
+/* ----- Build header ----- */
+.run-button {
+    font-size: 15px;
+}
+
+/* ------------------------------- */
+
 div.panel-body.well {
     border-radius: 0;
 }
